@@ -44,7 +44,7 @@ local autocmds = {
         { "InsertEnter", "*", "setlocal nohlsearch" };
     };
     lua_highlight = {
-        { "TextYankPost", "*", [[silent! lua vim.highlight.on_yank() {higroup="IncSearch", timeout=400}]] };
+        { "TextYankPost", "*", [[silent! lua vim.highlight.on_yank() {higroup="IncSearch", timeout=5000}]] };
     };
     no_comment_next_line = {
         { "BufEnter", "*", "set fo-=c fo-=r fo-=o" };
