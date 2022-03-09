@@ -74,6 +74,12 @@ keymap("n", "_", "<C-x>", opts)
 keymap("n", "<C-j>", "2<C-e>", opts)
 keymap("n", "<C-k>", "2<C-y>", opts)
 
+-- Close buffer
+keymap("n", "<leader>w", "<cmd>bd<CR>", opts)
+
+-- Select all
+keymap("n", "<leader>sa", "gg<S-v>G", opts)
+
 
 -------------------------------------------------------------------------
 
@@ -109,6 +115,9 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", ":m .+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m .-2<CR>gv=gv", opts)
 keymap("v", "p", '"_dP', opts)
+
+-- Select all
+keymap("v", "<leader>sa", "<Esc>", opts)
 
 -- Visual Block --
 -- Move text up and down
