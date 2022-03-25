@@ -43,12 +43,22 @@ return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
   -- use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  -- use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  -- use "kyazdani42/nvim-web-devicons"
-  -- use "kyazdani42/nvim-tree.lua"
-  -- use "akinsho/bufferline.nvim"
-  -- use "moll/vim-bbye"
-  -- use "nvim-lualine/lualine.nvim"
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    -- config = function() require'nvim-tree'.setup {} end
+  }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+  use "moll/vim-bbye"
   -- use "akinsho/toggleterm.nvim"
   -- use "ahmedkhalf/project.nvim"
   -- use "lewis6991/impatient.nvim"
@@ -66,6 +76,7 @@ return packer.startup(function(use)
   }
 
   -- Colorschemes
+  use "norcalli/nvim-colorizer.lua"
   use 'tjdevries/colorbuddy.vim'
   use { 'Th3Whit3Wolf/onebuddy', branch = 'main' }
 
@@ -112,6 +123,8 @@ return packer.startup(function(use)
   -- Markdown
   use "iamcco/markdown-preview.nvim"
 
+  -- LaTeX
+  use "lervag/vimtex"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

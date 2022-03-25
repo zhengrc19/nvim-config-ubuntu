@@ -80,6 +80,10 @@ keymap("n", "<leader>w", "<cmd>bd<CR>", opts)
 -- Select all
 keymap("n", "<leader>sa", "gg<S-v>G", opts)
 
+-- Add new line without entering insert mode
+keymap("n", "m", "<cmd>put =''<CR>", opts)
+keymap("n", "M", "<cmd>put! =''<CR>", opts)
+
 
 -------------------------------------------------------------------------
 
