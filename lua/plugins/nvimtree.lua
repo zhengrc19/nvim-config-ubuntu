@@ -40,7 +40,7 @@ local my_list = {
   -- { key = "K",                            action = "first_sibling" },
   -- { key = "J",                            action = "last_sibling" },
   { key = "I",                            action = "toggle_git_ignored" },
-  { key = "H",                            action = "toggle_dotfiles" },
+  { key = "<C-h>",                            action = "toggle_dotfiles" },
   { key = "R",                            action = "refresh" },
   { key = "a",                            action = "create" },
   { key = "d",                            action = "remove" },
@@ -107,6 +107,7 @@ nvim_tree.setup {
   view = {
     hide_root_folder = false,
     auto_resize = true,
+    signcolomn = "auto",
     mappings = {
       custom_only = true,
       list = my_list,

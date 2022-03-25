@@ -75,7 +75,7 @@ keymap("n", "<C-j>", "2<C-e>", opts)
 keymap("n", "<C-k>", "2<C-y>", opts)
 
 -- Close buffer
-keymap("n", "<leader>w", "<cmd>bd<CR>", opts)
+keymap("n", "<leader>w", "<cmd>Bdelete<CR>", opts)
 
 -- Select all
 keymap("n", "<leader>sa", "gg<S-v>G", opts)

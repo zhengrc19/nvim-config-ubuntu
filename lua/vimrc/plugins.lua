@@ -61,9 +61,24 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   -- use "akinsho/toggleterm.nvim"
   -- use "ahmedkhalf/project.nvim"
-  -- use "lewis6991/impatient.nvim"
+  use "lewis6991/impatient.nvim"
   -- use "lukas-reineke/indent-blankline.nvim"
-  -- use "goolord/alpha-nvim"
+
+  use {
+    "Darazaki/indent-o-matic",
+    config = function ()
+        require('indent-o-matic').setup { max_lines = 2048, }
+    end
+  }
+  -- use {
+  --   'goolord/alpha-nvim',
+  --   requires = { 'kyazdani42/nvim-web-devicons' },
+  --   config = function ()
+  --       require'alpha'.setup(require'alpha.themes.startify'.config)
+  --   end
+  -- }
+  use "mhinz/vim-startify"
+  -- use "Shatur/neovim-session-manager"
   -- use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   -- use "folke/which-key.nvim"
 
@@ -87,7 +102,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
-
+  use "hrsh7th/cmp-nvim-lsp-signature-help"
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
@@ -119,7 +134,12 @@ return packer.startup(function(use)
     },
     -- tag = 'release' -- To use the latest release
   }
-
+  use {
+    'windwp/nvim-spectre',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
   -- Markdown
   use "iamcco/markdown-preview.nvim"
 
