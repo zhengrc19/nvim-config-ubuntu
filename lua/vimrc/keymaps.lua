@@ -76,6 +76,7 @@ keymap("n", "<C-k>", "2<C-y>", opts)
 
 -- Close buffer
 keymap("n", "<leader>w", "<cmd>Bdelete<CR>", opts)
+keymap("n", "<C-q>", "<cmd>Bclose select<CR>", opts)
 
 -- Select all
 keymap("n", "<leader>sa", "gg<S-v>G", opts)
@@ -84,6 +85,8 @@ keymap("n", "<leader>sa", "gg<S-v>G", opts)
 keymap("n", "m", "<cmd>put =''<CR>", opts)
 keymap("n", "M", "<cmd>put! =''<CR>", opts)
 
+-- Delete without yanking
+keymap("n", "<leader>d", '"_d', opts)
 
 -------------------------------------------------------------------------
 
@@ -118,6 +121,9 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m .-2<CR>gv=gv", opts)
+
+-- delete without yanking
+keymap("v", "<leader>d", '"_d', opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Select all

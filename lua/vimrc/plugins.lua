@@ -59,10 +59,13 @@ return packer.startup(function(use)
     requires = 'kyazdani42/nvim-web-devicons'
   }
   use "moll/vim-bbye"
-  -- use "akinsho/toggleterm.nvim"
+  -- provides close menu so is better
+  use "Asheq/close-buffers.vim"
+  -- use "kazhala/close-buffers.nvim"
+  use "akinsho/toggleterm.nvim"
   -- use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
-  -- use "lukas-reineke/indent-blankline.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
   use {
     "Darazaki/indent-o-matic",
@@ -79,7 +82,7 @@ return packer.startup(function(use)
   -- }
   use "mhinz/vim-startify"
   -- use "Shatur/neovim-session-manager"
-  -- use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   -- use "folke/which-key.nvim"
 
   -- commenting
@@ -99,6 +102,8 @@ return packer.startup(function(use)
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-calc" -- calculator
+  use "hrsh7th/cmp-omni" -- omni-completion (for vimtex)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
@@ -145,6 +150,9 @@ return packer.startup(function(use)
 
   -- LaTeX
   use "lervag/vimtex"
+
+  -- RISC-V Assembly
+  use "kylelaker/riscv.vim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

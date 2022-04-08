@@ -65,6 +65,7 @@ vim.g.clipboard = {
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"    -- go to next line when at end
 vim.cmd "set iskeyword-=_"              -- let _ be a word separator
+vim.cmd "set iskeyword-=:"              -- let : be a word separator
 
 vim.cmd [[
 aug FixTypos

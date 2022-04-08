@@ -21,6 +21,8 @@ vim.g.nvim_tree_icons = {
   },
 }
 
+vim.cmd [[highlight NvimTreeNormal guibg=#24262A]]
+
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "sf", "<cmd>NvimTreeToggle<CR>", opts)
 -- my mappings, including some default mappings
@@ -40,7 +42,7 @@ local my_list = {
   -- { key = "K",                            action = "first_sibling" },
   -- { key = "J",                            action = "last_sibling" },
   { key = "I",                            action = "toggle_git_ignored" },
-  { key = "<C-h>",                            action = "toggle_dotfiles" },
+  { key = "<C-h>",                        action = "toggle_dotfiles" },
   { key = "R",                            action = "refresh" },
   { key = "a",                            action = "create" },
   { key = "d",                            action = "remove" },
@@ -70,15 +72,15 @@ if not status_ok then
   return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then
-  return
-end
+-- local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+-- if not config_status_ok then
+--   return
+-- end
 
-local tree_cb = nvim_tree_config.nvim_tree_callback
+-- local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
-  open_on_setup = true,
+  open_on_setup = false,
   auto_close = false,
   ignore_ft_on_setup = {
     "startify",
@@ -123,9 +125,12 @@ nvim_tree.setup {
     tree_width = 30,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
     custom = {},
     exclude = {},
+  },
+  git = {
+    ignore = false,
   },
 }
 
