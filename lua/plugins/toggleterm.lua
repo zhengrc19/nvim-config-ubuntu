@@ -1,6 +1,6 @@
 local status_ok, toggleterm = pcall(require, "toggleterm")
 if not status_ok then
-	return
+  return
 end
 
 local Terminal = require('toggleterm.terminal').Terminal
@@ -27,9 +27,15 @@ toggleterm.setup{
     Normal = {
       guibg = '#000000',
     },
-  --   NormalFloat = {
-  --     link = 'Normal'
-  --   },
+    -- NormalFloat = {
+    --   link = 'Normal'
+    -- },
+    LineNr = {
+      guibg = '#000000'
+    },
+    SignColumn = {
+      guibg = '#000000'
+    }
   --   FloatBorder = {
   --     guifg = <VALUE-HERE>,
   --     guibg = <VALUE-HERE>,
@@ -99,7 +105,7 @@ vim.api.nvim_set_keymap("t", "<M-g>", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", {noremap
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}
   vim.api.nvim_buf_set_keymap(0, 't', '<Esc>', [[<C-\><C-n>]], opts)
-  vim.api.nvim_buf_set_keymap(0, 't', 'jk', [[<C-\><C-n>]], opts)
+  -- vim.api.nvim_buf_set_keymap(0, 't', 'jk', [[<C-\><C-n>]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', 'sh', [[<C-\><C-n><C-W>h]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', 'sj', [[<C-\><C-n><C-W>j]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', 'sk', [[<C-\><C-n><C-W>k]], opts)

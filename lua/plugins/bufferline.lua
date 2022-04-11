@@ -5,9 +5,9 @@ end
 
 bufferline.setup {
   options = {
-    numbers = "ordinal", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
-    close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
-    middle_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
+    numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
+    close_command = "Bdelete %d", -- can be a string | function, see "Mouse actions"
+    middle_mouse_command = "Bdelete %d", -- can be a string | function, see "Mouse actions"
     left_mouse_command = "buffer %d", -- can be a string | function, see "Mouse actions"
     right_mouse_command = nil, -- can be a string | function, see "Mouse actions"
     -- NOTE: this plugin is designed with this icon in mind,
@@ -32,14 +32,14 @@ bufferline.setup {
     --     return vim.fn.fnamemodify(buf.name, ':t:r')
     --   end
     -- end,
-    max_name_length = 18,
-    max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
-    tab_size = 18,
+    max_name_length = 15,
+    max_prefix_length = 10, -- prefix used when a buffer is de-duplicated
+    tab_size = 15,
     diagnostics = "nvim_lsp",
     diagnostics_update_in_insert = false,
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
-      local icon = level:match("error") and " " or " "
-      return " " .. icon .. count
+      local icon = level:match("error") and "" or ""
+      return "" .. icon .. count
     end,
     -- NOTE: this will be called a lot so don't do any heavy processing here
     custom_filter = function(buf_number)
@@ -64,14 +64,14 @@ bufferline.setup {
     end,
     -- offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
     show_buffer_icons = true,
-    show_buffer_close_icons = true,
-    show_close_icon = true,
+    show_buffer_close_icons = false,
+    show_close_icon = false,
     show_tab_indicators = true,
     persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
     -- can also be a table containing 2 custom separators
     -- [focused and unfocused]. eg: { '|', '|' }
-    separator_style =  "thin", -- "thick" | "thin" | { 'any', 'any' },
-    enforce_regular_tabs = true,
+    separator_style =  "thin", -- "slant" | "thick" | "thin" | { 'any', 'any' },
+    enforce_regular_tabs = false,
     always_show_bufferline = true,
     -- sort_by = 'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
     --   -- add custom logic
@@ -176,13 +176,13 @@ bufferline.setup {
 local opts = {noremap = true, silent = true}
 vim.api.nvim_set_keymap("n", "<leader>gb", "<Cmd>BufferLinePick<CR>", opts)
 
-vim.api.nvim_set_keymap("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>0", "<Cmd>BufferLineGoToBuffer 10<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>0", "<Cmd>BufferLineGoToBuffer 10<CR>", opts)

@@ -55,6 +55,7 @@ keymap("n", "H", "^", opts)
 keymap("n", "<Tab>", ":bnext<CR>", opts)
 keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
 keymap("n", "`", ":bprevious<CR>", opts)
+keymap("n", "<C-l>", "<C-i>", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
