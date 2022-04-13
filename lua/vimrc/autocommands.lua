@@ -52,6 +52,9 @@ local autocmds = {
     -- ansi_esc_log = {
         -- { "BufEnter", "*.log", ":AnsiEsc" };
     -- };
+    auto_tex_wrap = {
+        { "FileType", "tex",  [[set wrap]] };
+    };
     -- auto_omni_completion = {
     --     { "FileType", "tex",  [[lua require('cmp').setup.buffer { sources = { { name = 'omni' } }  }]] };
     -- };

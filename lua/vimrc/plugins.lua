@@ -152,6 +152,7 @@ return packer.startup(function(use)
 
   -- LaTeX
   use "lervag/vimtex"
+  use "tpope/vim-surround"
 
   -- RISC-V Assembly
   use "kylelaker/riscv.vim"
