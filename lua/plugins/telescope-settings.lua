@@ -79,6 +79,10 @@ telescope.setup {
   },
   pickers = {
     -- Default configuration for builtin pickers goes here:
+    lsp_code_actions = {
+      theme = "cursor",
+      -- winblend = 10,
+    },
     -- find_files = {
     --   theme = "dropdown",
     --   -- winblend = 10,
