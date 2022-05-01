@@ -20,9 +20,7 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 
 ![telescope](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/telescope.png)
 
-# Features
-
-# List of Plugins and Usages
+# Features and Corresponding Plugins
 
 I starred every plugin I use to show support. I recommend everyone else to do so as well.
 
@@ -90,6 +88,6 @@ I starred every plugin I use to show support. I recommend everyone else to do so
 
 
 # TODOs
-- [ ] Debug tool: thinking about [Vimspector](https://github.com/puremourning/vimspector) or [nvim-dap](https://github.com/mfussenegger/nvim-dap). 
+- [ ] Debug tool: thinking about [Vimspector](https://github.com/puremourning/vimspector) or [nvim-dap](https://github.com/mfussenegger/nvim-dap). Also heard about `termdebug` which seems to not need any plugins.
 
 - [ ] [Vimtex](https://github.com/lervag/vimtex): forward and backward search
