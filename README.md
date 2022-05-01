@@ -10,7 +10,7 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 
 # Screenshots
 
-![image-20220501145109071](\\wsl.localhost\Ubuntu\home\zhengrc19\.config\nvim\README.assets\image-20220501145109071.png)
+![image-20220501145109071](README.assets/image-20220501145109071.png)
 
 
 # Features
