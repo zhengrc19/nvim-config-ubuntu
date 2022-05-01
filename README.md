@@ -16,6 +16,10 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 
 ![latex](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/latex.png)
 
+![lazygit](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/lazygit.png)
+
+![telescope](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/telescope.png)
+
 # Features
 
 # List of Plugins and Usages
