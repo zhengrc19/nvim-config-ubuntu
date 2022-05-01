@@ -1,5 +1,5 @@
 # Neovim Config (Ubuntu)
-This is my personal Neovim config for Ubuntu systems. As a CS undergrad at Tsinghua currently the config is built around course projects, including Python, C/C++, and some Assembly code.
+This is my personal [Neovim](https://github.com/neovim/neovim) config for Ubuntu systems. As a CS undergrad at Tsinghua currently the config is built around course projects, including Python, C/C++, and some Assembly code.
 
 The config is purely written in Lua, as well as most plugins used. However I could not resist the quality of tpope's and other great Vimscript plugins, so I'm not strictly sticking to Lua for the plugin's language.
 
@@ -8,8 +8,9 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 | Version   | Neovim 0.7.0   |
 | Linux System   | Ubuntu 20.04 LTS on Windows 11 WSL   |
 
-
 # Screenshots
+
+![image-20220501145109071](\\wsl.localhost\Ubuntu\home\zhengrc19\.config\nvim\README.assets\image-20220501145109071.png)
 
 
 # Features
@@ -17,67 +18,67 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 
 # List of Plugins and Usages
 ### Basic Features
-- **File Tree**: nvim-tree.lua
-- **Status Line**: lualine.lua
-- **Buffer Line (Tab Bar)**: bufferline.lua
+- **File Tree**: [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- **Status Line**: [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- **Buffer Line (Tab Bar)**: [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 
 ### Better Editor
-- **Better Syntax Highlighting**: nvim-treesitter
-- **Paired Brackets**: nvim-autopairs
-- **Rainbow-Colored Brackets**: nvim-ts-rainbow
+- **Better Syntax Highlighting**: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- **Paired Brackets**: [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- **Rainbow-Colored Brackets**: [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 - **Indentation**
-  - Auto determine indent width of file: intent-o-matic
-  - Indentation guides: indent-blankline.nvim
+  - Auto determine indent width of file: [intent-o-matic](https://github.com/Darazaki/indent-o-matic)
+  - Indentation guides: [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 
 ### IDE Features
-- **Start Page and Project Management**: vim-startify
-- **Git Sign Column**: gitsigns.nvim
-- **Project-scope Find and Replace**: nvim-spectre
-- **Syntax-specific Commenting**: Comment.nvim
-- **Integrated Terminal**: toggleterm.nvim
+- **Start Page and Project Management**: [vim-startify](https://github.com/mhinz/vim-startify)
+- **Git Sign Column**: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- **Project-scope Find and Replace**: [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
+- **Syntax-specific Commenting**: [Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- **Integrated Terminal**: [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - **Language Server Protocol (LSP)**:
-  - nvim-lspconfig: to enable LSP.
-  - nvim-lsp-installer: to install LSP servers.
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): to enable LSP.
+  - [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer): to install LSP servers.
 - **Autocompletion**:
-  - nvim-cmp: basic completion plugin. Supported completion sources:
-    - cmp-nvim-lsp: completion from LSP server.
-    - cmp-buffer: completion from open buffers.
-    - cmp-path: completion from path of file system.
-    - cmp-calc: calculator.
-    - cmp-omni: omni-completion (for Vimtex).
-    - cmp-cmdline: command line completion.
-    - cmp-luasnip: snippet completion.
-    - cmp-nvim-lsp-signature-help: parameter types when calling a function.
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): basic completion plugin. Supported completion sources:
+    - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp): completion from LSP server.
+    - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer): completion from open buffers.
+    - [cmp-path](https://github.com/hrsh7th/cmp-path): completion from path of file system.
+    - [cmp-calc](https://github.com/hrsh7th/cmp-calc): calculator.
+    - [cmp-omni](https://github.com/hrsh7th/cmp-omni): omni-completion (for [Vimtex]((https://github.com/lervag/vimtex))).
+    - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline): command line completion.
+    - [cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip): snippet completion.
+    - [cmp-nvim-lsp-signature-help](https://github.com/hrsh7th/cmp-nvim-lsp-signature-help): parameter types when calling a function.
 - **Snippets**:
-  - LuaSnip: snippet engine
-  - friendly-snippets: snippet bank
+  - [LuaSnip](https://github.com/L3MON4D3/LuaSnip): snippet engine
+  - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets): snippet bank
 
 ### Language Specific
-- **Markdown**: markdown-preview.nvim
-- **$\LaTeX{}$**: vimtex
-- **RISC-V Assembly**: riscv.vim
+- **Markdown**: [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+- **$\LaTeX{}$**: [vimtex](https://github.com/lervag/vimtex)
+- **RISC-V Assembly**: [riscv.vim](https://github.com/kylelaker/riscv.vim)
 
-### Colorscheme: onebuddy
+### Colorscheme: [onebuddy](https://github.com/Th3Whit3Wolf/onebuddy)
 
 ### Useful Features
-- **Show Color of Hex Value as Highlight**: nvim-colorizer
-- **Don't Change Window Layout When Closing Buffer**: vim-bbye
-- **Choose Which Buffers to Close**: close-buffers.vim
+- **Show Color of Hex Value as Highlight**: [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
+- **Don't Change Window Layout When Closing Buffer**: [vim-bbye](https://github.com/moll/vim-bbye)
+- **Choose Which Buffers to Close**: [close-buffers.vim](https://github.com/Asheq/close-buffers.vim)
 
 ### Helper Packages
-- **Package Manager**: packer.nvim
-- **Icons**: nvim-web-devicons
-- **Lua Function Library**: plenary.nvim
-- **Fix LSP Doc Highlight**: FixCursorHold.nvim
-- **Speeding Up**: impatient.nvim
-- **Colorscheme Utility**: colorbuddy.vim
+- **Package Manager**: [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- **Icons**: [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+- **Lua Function Library**: [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- **Fix LSP Doc Highlight**: [FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
+- **Speeding Up**: [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
+- **Colorscheme Utility**: [colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim)
 
 ### tpope's Great Plugins
-- vim-surround helps me quickly change the surrounding brackets / $\LaTeX{}$ environment.
-- vim-repeat can repeat series of actions with `.` keystroke.
+- [vim-surround](https://github.com/tpope/vim-surround) helps me quickly change the surrounding brackets / $\LaTeX{}$ environment.
+- [vim-repeat](https://github.com/tpope/vim-repeat) can repeat series of actions with `.` keystroke.
 
 
 # TODOs
-[ ] Debug tool: thinking about Vimspector or nvim-dap. 
+- [ ] Debug tool: thinking about [Vimspector](https://github.com/puremourning/vimspector) or [nvim-dap](https://github.com/mfussenegger/nvim-dap). 
 
-[ ] Vimtex: forward and backward search
+- [ ] [Vimtex](https://github.com/lervag/vimtex): forward and backward search
