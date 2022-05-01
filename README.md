@@ -1,7 +1,7 @@
 # Neovim Config (Ubuntu)
 This is my personal [Neovim](https://github.com/neovim/neovim) config for Ubuntu systems. As a CS undergrad at Tsinghua currently the config is built around course projects, including Python, C/C++, and some Assembly code.
 
-The config is purely written in Lua, as well as most plugins used. However I could not resist the quality of tpope's and other great Vimscript plugins, so I'm not strictly sticking to Lua for the plugin's language.
+The config is purely written in Lua, as well as most plugins used. However I could not resist the quality of tpope's and other great Vimscript plugins, so I'm not strictly sticking to Lua for a specific plugin's language.
 
 | Attribute   | Current Value    |
 |--------------- | --------------- |
@@ -10,13 +10,18 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 
 # Screenshots
 
-![image-20220501145109071](README.assets/image-20220501145109071.png)
+![dev-page](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/dev-page.png)
+
+![start-page](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/start-page.png)
+
 
 
 # Features
 
-
 # List of Plugins and Usages
+
+I starred every plugin I use to show support. I recommend everyone else to do so as well.
+
 ### Basic Features
 - **File Tree**: [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - **Status Line**: [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
