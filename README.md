@@ -14,7 +14,7 @@ The config is purely written in Lua, as well as most plugins used. However I cou
 
 ![start-page](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/start-page.png)
 
-
+![latex](https://github.com/zhengrc19/nvim-config-ubuntu/raw/master/README.assets/latex.png)
 
 # Features
 
@@ -40,6 +40,7 @@ I starred every plugin I use to show support. I recommend everyone else to do so
 - **Git Sign Column**: [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - **Project-scope Find and Replace**: [nvim-spectre](https://github.com/nvim-pack/nvim-spectre)
 - **Syntax-specific Commenting**: [Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- **Fuzzy Finding**: [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - **Integrated Terminal**: [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - **Language Server Protocol (LSP)**:
   - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): to enable LSP.
@@ -77,6 +78,7 @@ I starred every plugin I use to show support. I recommend everyone else to do so
 - **Fix LSP Doc Highlight**: [FixCursorHold.nvim](https://github.com/antoinemadec/FixCursorHold.nvim)
 - **Speeding Up**: [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
 - **Colorscheme Utility**: [colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim)
+- **Faster Fuzzy Finding**: [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 
 ### tpope's Great Plugins
 - [vim-surround](https://github.com/tpope/vim-surround) helps me quickly change the surrounding brackets / $\LaTeX{}$ environment.
