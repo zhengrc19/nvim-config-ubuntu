@@ -1,7 +1,7 @@
 # Neovim Config (Ubuntu)
-This is my personal [Neovim](https://github.com/neovim/neovim) config for Ubuntu systems. As a CS undergrad at Tsinghua currently the config is built around course projects, including Python, C/C++, <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height=20>and some Assembly code.
+This is my personal [Neovim](https://github.com/neovim/neovim) config for Ubuntu systems. As a CS undergrad at Tsinghua currently the config is built around course projects, including Python, C/C++, <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height=17>and some Assembly code.
 
-The config is purely written in Lua, as well as most plugins used. However I could not resist the quality of tpope's and other great Vimscript plugins, so I'm not strictly sticking to Lua for a specific plugin's language.
+The config is purely written in Lua, as well as most plugins used. However I could not resist the quality of [tpope](https://github.com/tpope/)'s and other great Vimscript plugins, so I'm not strictly sticking to Lua for a specific plugin's language.
 
 | Attribute   | Current Value    |
 |--------------- | --------------- |
@@ -65,7 +65,7 @@ I starred every plugin I use to show support. I recommend everyone else to do so
 
 ### Language Specific
 - **Markdown**: [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- **$\LaTeX{}$**: [vimtex](https://github.com/lervag/vimtex)
+- <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height=17>: [vimtex](https://github.com/lervag/vimtex)
 - **RISC-V Assembly**: [riscv.vim](https://github.com/kylelaker/riscv.vim)
 
 ### Colorscheme: [onebuddy](https://github.com/Th3Whit3Wolf/onebuddy)
@@ -84,8 +84,8 @@ I starred every plugin I use to show support. I recommend everyone else to do so
 - **Colorscheme Utility**: [colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim)
 - **Faster Fuzzy Finding**: [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 
-### tpope's Great Plugins
-- [vim-surround](https://github.com/tpope/vim-surround) helps me quickly change the surrounding brackets / <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height=20> environment.
+### [tpope](https://github.com/tpope/)'s Great Plugins
+- [vim-surround](https://github.com/tpope/vim-surround) helps me quickly change the surrounding brackets / <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height=17> environment.
 - [vim-repeat](https://github.com/tpope/vim-repeat) can repeat series of actions with `.` keystroke.
 
 
