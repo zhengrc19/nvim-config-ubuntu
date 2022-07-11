@@ -1,25 +1,5 @@
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
-vim.g.nvim_tree_icons = {
-  default = "",
-  symlink = "",
-  git = {
-    unstaged = "",
-    staged = "S",
-    unmerged = "",
-    renamed = "➜",
-    deleted = "",
-    untracked = "U",
-    ignored = "◌",
-  },
-  folder = {
-    default = "",
-    open = "",
-    empty = "",
-    empty_open = "",
-    symlink = "",
-  },
-}
 
 vim.cmd [[highlight NvimTreeNormal guibg=#24262A]]
 
@@ -81,17 +61,18 @@ end
 
 nvim_tree.setup {
   open_on_setup = false,
-  auto_close = false,
+  -- auto_close = false,
   ignore_ft_on_setup = {
     "startify",
     "dashboard",
     "alpha",
   },
   open_on_tab = false,
-  update_to_buf_dir = {
-    enable = true,
-    auto_open = true,
-  },
+  -- update_to_buf_dir = {
+  --   enable = true,
+  --   auto_open = true,
+  -- },
+  respect_buf_cwd = true,
   diagnostics = {
     enable = true,
     icons = {
@@ -108,21 +89,45 @@ nvim_tree.setup {
   },
   view = {
     hide_root_folder = false,
-    auto_resize = true,
-    signcolomn = "auto",
+    adaptive_size = true,
+    signcolumn = "auto",
     mappings = {
       custom_only = true,
       list = my_list,
     },
   },
-  git_hl = 1,
-  root_folder_modifier = ":t",
-  show_icons = {
-    git = 1,
-    folders = 1,
-    files = 1,
-    folder_arrows = 1,
-    tree_width = 30,
+  renderer = {
+    highlight_git = true,
+    root_folder_modifier = ":t",
+    icons = {
+      show = {
+        git = true,
+        folder = true,
+        file = true,
+        folder_arrow = true,
+        -- tree_width = 30,
+      },
+      glyphs = {
+        default = "",
+        symlink = "",
+        git = {
+          unstaged = "",
+          staged = "S",
+          unmerged = "",
+          renamed = "➜",
+          deleted = "",
+          untracked = "U",
+          ignored = "◌",
+        },
+        folder = {
+          default = "",
+          open = "",
+          empty = "",
+          empty_open = "",
+          symlink = "",
+        },
+      },
+    },
   },
   filters = {
     dotfiles = false,
