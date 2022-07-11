@@ -49,18 +49,18 @@ local options = {
     conceallevel = 0,
 }
 
-vim.g.clipboard = {
-    name = "win32yank-wsl",
-    copy = {
-        ["+"] = "win32yank.exe -i --crlf",
-        ["*"] = "win32yank.exe -i --crlf"
-    },
-    paste = {
-        ["+"] = "win32yank.exe -o --lf",
-        ["*"] = "win32yank.exe -o --lf"
-    },
-    cache_enable = 0,
-}
+-- vim.g.clipboard = {
+--     name = "win32yank-wsl",
+--     copy = {
+--         ["+"] = "win32yank.exe -i --crlf",
+--         ["*"] = "win32yank.exe -i --crlf"
+--     },
+--     paste = {
+--         ["+"] = "win32yank.exe -o --lf",
+--         ["*"] = "win32yank.exe -o --lf"
+--     },
+--     cache_enable = 0,
+-- }
 
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"    -- go to next line when at end
