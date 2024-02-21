@@ -1,3 +1,6 @@
+# Announcement
+This repo is no longer maintained. I have switched to a MacBook Pro so this [New Repo](https://github.com/zhengrc19/nvim-config-macos) will contain all my latest configs.
+
 # Neovim Config (Ubuntu)
 This is my personal [Neovim](https://github.com/neovim/neovim) config for Ubuntu systems. As a CS undergrad at Tsinghua currently the config is built around course projects, including Python, C/C++, <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height=17>and some Assembly code.
 
